@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Система обліку розрахунків</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="/app.js">
+</head>
+<body>
+    <h2>Облік розрахунків з покупцями</h2>
+    <!-- Форма для додавання покупця -->
+    <div>
+        <h3>Додати покупця</h3>
+        <input type="text" id="customerName" placeholder="Ім'я покупця">
+        <button id="addButton" onclick="addCustomer()">Додати</button>
+    </div>
+
+
+
+    <!-- Відображення списку покупців -->
+    <div>
+        <h3>Список покупців</h3>
+        <ul id="customerList"></ul>
+    </div>
+</body>
+    <script src="app.js" defer></script>
+</html>
