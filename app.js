@@ -35,5 +35,11 @@ function loadCustomers() {
     return [];
 }
 
+function clearCustomers() {
+    customers = []; // Очистіть масив
+    updateCustomerList(); // Оновіть список на сторінці
+    localStorage.removeItem('customers'); // Видаліть дані з локального сховища
+}
+
 // Запуск функції для оновлення списку при першому завантаженні
 updateCustomerList();
